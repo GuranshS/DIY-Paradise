@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE product-catalog [
+  <!ENTITY company "DIY Paradise">
+  <!ENTITY currency "AUD">
+  <!ELEMENT product-catalog (category+)>
+  <!ELEMENT category (name, product+)>
+  <!ELEMENT product (name, description, pricing, search-tags?, reviews?, image+, related-url, brand, discount, color)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT description (#PCDATA)>
+  <!ELEMENT pricing (#PCDATA)>
+  <!ELEMENT search-tags (tag*)>
+  <!ELEMENT tag (#PCDATA)>
+  <!ELEMENT reviews (review*)>
+  <!ELEMENT review (#PCDATA)>
+  <!ATTLIST review stars (0|1|2|3|4|5) #REQUIRED>
+  <!ELEMENT image (#PCDATA)>
+  <!ELEMENT related-url (#PCDATA)>
+  <!ELEMENT brand (#PCDATA)>
+  <!ELEMENT discount (#PCDATA)>
+  <!ELEMENT color (#PCDATA)>
+]>
+<product-catalog>
+  <category>
+    <name>Category Name</name>
+    <product>
+      <name>Product Name</name>
+      <description>Product description goes here.</description>
+      <pricing>&currency; 00.00</pricing>
+      <search-tags>
+        <tag>tag1</tag>
+        <tag>tag2</tag>
+      </search-tags>
+      <reviews>
+        <review stars="5">Review text here.</review>
+      </reviews>
+      <image>images/product-image.jpg</image>
+      <related-url>https://&company;.com/product-page</related-url>
+      <brand>Brand Name</brand>
+      <discount>10% off</discount>
+      <color>Product Color</color>
+    </product>
+  </category>
+</product-catalog>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE product-catalog [
+  <!ENTITY company "DIY Paradise">
+  <!ENTITY currency "AUD">
+  <!ELEMENT product-catalog (category+)>
+  <!ELEMENT category (name, product+)>
+  <!ELEMENT product (name, description, pricing, search-tags?, reviews?, image+, related-url, brand, discount, color)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT description (#PCDATA)>
+  <!ELEMENT pricing (#PCDATA)>
+  <!ELEMENT search-tags (tag*)>
+  <!ELEMENT tag (#PCDATA)>
+  <!ELEMENT reviews (review*)>
+  <!ELEMENT review (#PCDATA)>
+  <!ATTLIST review stars (0|1|2|3|4|5) #REQUIRED>
+  <!ELEMENT image (#PCDATA)>
+  <!ELEMENT related-url (#PCDATA)>
+  <!ELEMENT brand (#PCDATA)>
+  <!ELEMENT discount (#PCDATA)>
+  <!ELEMENT color (#PCDATA)>
+]>
+<product-catalog>
+  <category>
+    <name>Sculpting</name>
+    <product>
+      <name>Professional Clay Sculpting Set</name>
+      <description>A comprehensive set of tools for professional sculptors, including various shapes and sizes of sculpting knives, loop tools, and smoothing tools.</description>
+      <pricing>&currency; 89.99</pricing>
+      <search-tags>
+        <tag>sculpting</tag>
+        <tag>clay tools</tag>
+        <tag>professional</tag>
+      </search-tags>
+      <reviews>
+        <review stars="5">Excellent quality tools, perfect for detailed work!</review>
+        <review stars="4">Great set, but could use a better case.</review>
+      </reviews>
+      <image>images/sculpting-set.jpg</image>
+      <related-url>https://&company;.com/sculpting-set</related-url>
+      <brand>ArtisanCraft</brand>
+      <discount>15% off</discount>
+      <color>Silver</color>
+    </product>
+    <product>
+      <name>Polymer Clay Starter Kit</name>
+      <description>Perfect for beginners, this kit includes 30 colors of polymer clay, basic tools, and an instruction booklet.</description>
+      <pricing>&currency; 34.99</pricing>
+      <search-tags>
+        <tag>polymer clay</tag>
+        <tag>beginner</tag>
+        <tag>kit</tag>
+      </search-tags>
+      <reviews>
+        <review stars="4">Great for starting out, clay quality is good.</review>
+      </reviews>
+      <image>images/polymer-clay-kit.jpg</image>
+      <related-url>https://&company;.com/polymer-clay-kit</related-url>
+      <brand>ClayMaster</brand>
+      <discount>5% off</discount>
+      <color>Multicolor</color>
+    </product>
+    <product>
+      <name>Electric Pottery Wheel</name>
+      <description>A sturdy, variable speed electric pottery wheel for both beginners and experienced potters.</description>
+      <pricing>&currency; 299.99</pricing>
+      <search-tags>
+        <tag>pottery wheel</tag>
+        <tag>electric</tag>
+        <tag>ceramics</tag>
+      </search-tags>
+      <reviews>
+        <review stars="5">Smooth operation, very quiet motor!</review>
+        <review stars="5">Excellent for home studio use.</review>
+      </reviews>
+      <image>images/pottery-wheel.jpg</image>
+      <related-url>https://&company;.com/pottery-wheel</related-url>
+      <brand>SpinCraft</brand>
+      <discount>10% off</discount>
+      <color>Blue</color>
+    </product>
+  </category>
+</product-catalog>
