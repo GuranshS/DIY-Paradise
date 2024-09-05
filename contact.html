@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DIY Paradise - Your Household Hardware Store</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Document-level style placeholder*/
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>DIY Paradise</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms and Conditions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact Us</h2>
+        <p>Have questions? We're here to help! Fill out the form below or use our contact information.</p>
+        
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tel">Phone:</label>
+            <input type="tel" id="tel" name="tel"  pattern="[0-9]{3}[0-9]{2}[0-9]{3}" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <fieldset>
+                <legend>Is this message urgent?</legend>
+                <input type="radio" id="urgent-yes" name="urgent" value="yes" required>
+                <label for="urgent-yes">Yes</label>
+                <input type="radio" id="urgent-no" name="urgent" value="no" required>
+                <label for="urgent-no">No</label>
+            </fieldset>
+
+            <button type="submit">Send Message</button>
+            <button type="reset">Clear Form</button>
+        </form>
+
+        <h3>Other Ways to Reach Us</h3>
+        <p>Phone: 0498779900</p>
+        <p>Email: c3440239@uon.edu.au</p>
+        <p>Address: 12 Steel St., Heather Bay, NSW</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DIY Paradise. All rights reserved.</p>
+        <p>Created by Guransh Singh - <a href="mailto:your.email@example.com">c344039@uon.edu.au</a></p>
+        <p><a href="https://www.newcastle.edu.au">Created For University of Newcastle</a></p>
+    </footer>
 </body>
 </html>
