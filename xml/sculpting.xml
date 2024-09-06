@@ -4,7 +4,7 @@
   <!ENTITY currency "AUD">
   <!ELEMENT product-catalog (category+)>
   <!ELEMENT category (name, product+)>
-  <!ELEMENT product (name, description, pricing, search-tags?, reviews?, image+, related-url, brand, discount, color)>
+  <!ELEMENT product (name, description, pricing, search-tags?, reviews?, image+, related-url, brand, discount, colour)>
   <!ELEMENT name (#PCDATA)>
   <!ELEMENT description (#PCDATA)>
   <!ELEMENT pricing (#PCDATA)>
@@ -17,19 +17,19 @@
   <!ELEMENT related-url (#PCDATA)>
   <!ELEMENT brand (#PCDATA)>
   <!ELEMENT discount (#PCDATA)>
-  <!ELEMENT color (#PCDATA)>
+  <!ELEMENT colour (#PCDATA)>
 ]>
 <product-catalog>
   <category>
     <name>Sculpting</name>
     <product>
       <name>Professional Clay Sculpting Set</name>
-      <description>A comprehensive set of tools for professional sculptors, including various shapes and sizes of sculpting knives, loop tools, and smoothing tools.</description>
-      <pricing>&currency; 89.99</pricing>
+      <description>A set of tools for professional sculptors, including various shapes and sizes of sculpting knives and smoothing tools.</description>
+      <pricing>&currency; 90</pricing>
       <search-tags>
         <tag>sculpting</tag>
         <tag>clay tools</tag>
-        <tag>professional</tag>
+        <tag>set</tag>
       </search-tags>
       <reviews>
         <review stars="5">Excellent quality tools, perfect for detailed work!</review>
@@ -39,12 +39,12 @@
       <related-url>https://&company;.com/sculpting-set</related-url>
       <brand>ArtisanCraft</brand>
       <discount>15% off</discount>
-      <color>Silver</color>
+      <colour>Silver</colour>
     </product>
     <product>
       <name>Polymer Clay Starter Kit</name>
-      <description>Perfect for beginners, this kit includes 30 colors of polymer clay, basic tools, and an instruction booklet.</description>
-      <pricing>&currency; 34.99</pricing>
+      <description>Non-toxic soft shapable clay, 15 colours </description>
+      <pricing>&currency; 35</pricing>
       <search-tags>
         <tag>polymer clay</tag>
         <tag>beginner</tag>
@@ -57,26 +57,26 @@
       <related-url>https://&company;.com/polymer-clay-kit</related-url>
       <brand>ClayMaster</brand>
       <discount>5% off</discount>
-      <color>Multicolor</color>
+      <colour>Multicolour</colour>
     </product>
     <product>
       <name>Electric Pottery Wheel</name>
-      <description>A sturdy, variable speed electric pottery wheel for both beginners and experienced potters.</description>
-      <pricing>&currency; 299.99</pricing>
+      <description>Ppttery wheel for pot making, runs on electricity amd can change speed with a pedal</description>
+      <pricing>&currency; 300</pricing>
       <search-tags>
         <tag>pottery wheel</tag>
         <tag>electric</tag>
         <tag>ceramics</tag>
       </search-tags>
       <reviews>
-        <review stars="5">Smooth operation, very quiet motor!</review>
-        <review stars="5">Excellent for home studio use.</review>
+        <review stars="5">Smooth operation, very quiet!</review>
+        <review stars="5">Spinny go spin spin.</review>
       </reviews>
       <image>images/pottery-wheel.jpg</image>
       <related-url>https://&company;.com/pottery-wheel</related-url>
-      <brand>SpinCraft</brand>
+      <brand>CraftAid</brand>
       <discount>10% off</discount>
-      <color>Blue</color>
+      <colour>Blue</colour>
     </product>
   </category>
 </product-catalog>

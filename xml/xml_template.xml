@@ -4,7 +4,7 @@
   <!ENTITY currency "AUD">
   <!ELEMENT product-catalog (category+)>
   <!ELEMENT category (name, product+)>
-  <!ELEMENT product (name, description, pricing, search-tags?, reviews?, image+, related-url, brand, discount, color)>
+  <!ELEMENT product (name, description, pricing, search-tags?, reviews?, image+, related-url, brand, discount, colour)>
   <!ELEMENT name (#PCDATA)>
   <!ELEMENT description (#PCDATA)>
   <!ELEMENT pricing (#PCDATA)>
@@ -17,27 +17,27 @@
   <!ELEMENT related-url (#PCDATA)>
   <!ELEMENT brand (#PCDATA)>
   <!ELEMENT discount (#PCDATA)>
-  <!ELEMENT color (#PCDATA)>
+  <!ELEMENT colour (#PCDATA)>
 ]>
 <product-catalog>
   <category>
     <name>Category Name</name>
     <product>
       <name>Product Name</name>
-      <description>Product description goes here.</description>
+      <description>Product description</description>
       <pricing>&currency; 00.00</pricing>
       <search-tags>
         <tag>tag1</tag>
         <tag>tag2</tag>
       </search-tags>
       <reviews>
-        <review stars="5">Review text here.</review>
+        <review stars="5">Review text here</review>
       </reviews>
       <image>images/product-image.jpg</image>
       <related-url>https://&company;.com/product-page</related-url>
       <brand>Brand Name</brand>
       <discount>10% off</discount>
-      <color>Product Color</color>
+      <colour>Product colour</colour>
     </product>
   </category>
 </product-catalog>

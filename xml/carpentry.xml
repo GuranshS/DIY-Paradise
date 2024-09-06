@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE product-catalog [
+  <!ENTITY company "DIY Paradise">
+  <!ENTITY currency "AUD">
+  <!ELEMENT product-catalog (category+)>
+  <!ELEMENT category (name, product+)>
+  <!ELEMENT product (name, description, pricing, search-tags?, reviews?, image+, related-url, brand, discount, colour)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT description (#PCDATA)>
+  <!ELEMENT pricing (#PCDATA)>
+  <!ELEMENT search-tags (tag*)>
+  <!ELEMENT tag (#PCDATA)>
+  <!ELEMENT reviews (review*)>
+  <!ELEMENT review (#PCDATA)>
+  <!ATTLIST review stars (0|1|2|3|4|5) #REQUIRED>
+  <!ELEMENT image (#PCDATA)>
+  <!ELEMENT related-url (#PCDATA)>
+  <!ELEMENT brand (#PCDATA)>
+  <!ELEMENT discount (#PCDATA)>
+  <!ELEMENT colour (#PCDATA)>
+]>
+<product-catalog>
+  <category>
+    <name>Carpentry</name>
+    <product>
+      <name>Professional Woodworking Chisel Set</name>
+      <description>A set of 6 high-quality woodworking chisels made from steel, perfect for precise carpentry work.</description>
+      <pricing>&currency; 120</pricing>
+      <search-tags>
+        <tag>chisels</tag>
+        <tag>woodworking</tag>
+        <tag>hand tools</tag>
+      </search-tags>
+      <reviews>
+        <review stars="5">Exceptional quality, stays sharp for a long time!</review>
+        <review stars="4">Great set, but could use a better storage case.</review>
+      </reviews>
+      <image>images/chisel-set.jpg</image>
+      <related-url>https://&company;.com/chisel-set</related-url>
+      <brand>MasterCraft</brand>
+      <discount>20% off</discount>
+      <colour>Wood and Steel</colour>
+    </product>
+    <product>
+      <name>Cordless Drill Driver</name>
+      <description>A cordless drill driver with two batteries, charger, and a set of drill bits.</description>
+      <pricing>&currency; 300</pricing>
+      <search-tags>
+        <tag>drill</tag>
+        <tag>cordless</tag>
+        <tag>power tools</tag>
+      </search-tags>
+      <reviews>
+        <review stars="5">Excellent power and battery life!</review>
+        <review stars="4">I am a tradie and I recommend this to any apprentices.</review>
+      </reviews>
+      <image>images/cordless-drill.jpg</image>
+      <related-url>https://&company;.com/cordless-drill</related-url>
+      <brand>PowerPro</brand>
+      <discount>10% off</discount>
+      <colour>Yellow and Black</colour>
+    </product>
+    <product>
+      <name>Chainsaw</name>
+      <description> Chainsaw that runs on disel. Good for cutting down tree.</description>
+      <pricing>&currency; 900</pricing>
+      <search-tags>
+        <tag>saw</tag>
+        <tag>power tools</tag>
+        <tag>woodcutting</tag>
+      </search-tags>
+      <reviews>
+        <review stars="5">I like the revving sound. So cool!</review>
+        <review stars="1">Absolute dogshit. Almost cut off my hands</review>
+      </reviews>
+      <image>images/miter-saw.jpg</image>
+      <related-url>https://&company;.com/miter-saw</related-url>
+      <brand>CutMaster</brand>
+      <discount>5% off</discount>
+      <colour>Silver and Red</colour>
+    </product>
+  </category>
+</product-catalog>
