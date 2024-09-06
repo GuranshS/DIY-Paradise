@@ -23,7 +23,7 @@
   <category>
     <name>Carpentry</name>
     <product>
-      <name>Professional Woodworking Chisel Set</name>
+      <name> Woodworking Chisel Set</name>
       <description>A set of 6 high-quality woodworking chisels made from steel, perfect for precise carpentry work.</description>
       <pricing>&currency; 120</pricing>
       <search-tags>
@@ -62,7 +62,7 @@
     </product>
     <product>
       <name>Chainsaw</name>
-      <description> Chainsaw that runs on disel. Good for cutting down tree.</description>
+      <description> Chainsaw that runs on disel. Good for cutting down trees.</description>
       <pricing>&currency; 900</pricing>
       <search-tags>
         <tag>saw</tag>

@@ -10,6 +10,7 @@ body {
     background-size: cover;
 }
 
+
 /* Left side margin of 1cm as required */
 body > * {
     margin-left: 1cm;
@@ -27,7 +28,7 @@ header {
     border-bottom: 4px solid transparent;
     border-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.5), rgba(255,255,255,0));
     border-image-slice: 1;
-    color: white;
+    color: #333;
     padding: 1rem 0;
     text-align: center;
 }
@@ -98,7 +99,9 @@ h2 {
 
 #featured-products img {
     max-width: 100%;
-    height: auto;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
@@ -106,7 +109,7 @@ h2 {
 
 
 #welcome p {
-    font-size: 1.2em; /* Larger font size for welcome paragraph */
+    font-size: 1.2em; 
 }
 
 /* Footer styles */
@@ -115,7 +118,7 @@ footer {
     border-top: 4px solid transparent;
     border-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.5), rgba(255,255,255,0));
     border-image-slice: 1;
-    color: white;
+    color: rgb(19, 18, 18);
     text-align: right;
     padding: 0.5rem 0.5rem;
     margin-top: 2rem;
@@ -140,13 +143,3 @@ footer a {
 
 }
 
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    #featured-products ul {
-        flex-direction: column;
-    }
-
-    #featured-products li {
-        margin-bottom: 1rem;
-    }
-}
